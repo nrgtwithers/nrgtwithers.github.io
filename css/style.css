@@ -1,7 +1,7 @@
         body {
+            background-image: url("gust.jpeg");
+            background-repeat: cover;
             background-color: darkslategray;
-            background-image: url("../assets/gust.jpeg");
-            background-repeat: no-repeat;
             font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
 
