@@ -1,16 +1,27 @@
         body {
+            background-image: url("./assets/gust.jpeg");
             background-color: darkslategray;
-            background-image: url("../assets/gust.jpeg");
             background-repeat: no-repeat;
             font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
-
-        h1 {
+        
+        .container {
+            padding: 10px;
+            border: 1px;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: white;
+            text-align: center;
+            font-size: 50px;
+      
+        }
+        /* h1 {
             color: white;
             text-align: right;
             font-size: 50px;
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        }
+      
+        } */
 
         h1:hover {
             color:pink;
@@ -44,6 +55,8 @@
         li {
             color: white; 
             text-align: right;
+            display: inline-block;
+            padding: 25px;
         }
 
         a {
