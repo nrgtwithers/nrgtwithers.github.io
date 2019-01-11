@@ -1,11 +1,52 @@
 html, body {
-    /* background-image: url("../assets/eggs.jpg");
-    background-color: darkslategray;
-    background-repeat: no-repeat; */
-    height: 100%
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 100%;
+    font-family: monospace;
 }
 
+
+/* SIDEBAR NAV  */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    background-color: #000000;
+    color: white;
+    height: 100%; /* Full height */
+    position: fixed; /* Make it stick, even on scroll */
+    overflow: auto; /* Enable scrolling if the sidenav has too much content */
+    line-height: 2em;
+    font-family: monospace;
+    font-size: 15px;
+  }
+
+.sidebar{
+    text-align: center;
+    padding-top: 10%;
+}
+
+.pageTitle{
+    border-bottom: solid;
+    border-color: black;
+    border-width: 1px;
+    padding-bottom: 15px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: orange;
+    text-decoration: none;
+}
+
+hr{
+    border-color: white !important;
+    width: 80%;
+}
+  
 * {
     box-sizing: border-box;
   }
@@ -15,167 +56,29 @@ main {
 }
 
 .container {
-    width: 80%;
-    margin: 0px auto;
-    /* padding: 10px;
-    border: 1px;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: white;
-    text-align: center;
-    font-size: 50px; */
+    padding-top: 15%;
+    width: 60%;
+    margin-left: 20%;
 }
 
-
-
-.header {
-    /* position: static; */
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: beige;
-}
-
-li.nav {
-    float: left;
-    font-size: 20px;
-    text-align: center;
-    padding: 10px 0;
-    margin: 0;
-}
-
-nav li {
-    float: right;
-}
-
-/* h1:hover {
-    color:pink;
-} */
-
-nav a:hover {
-    background-color: white;
-}
-
-a {
-    color: seagreen;
-    text-decoration: none;
-}
-
-a:hover {
-    color: violet;
-    text-decoration: none;
-}
-
-nav a {
-    display: block;
-    text-align: center;
-    padding: 10px 10px;
-    color: black;
-}
 
 h1 {
     font-size: 30px;
-    text-align: right;
+    text-align: center;
 }
 
  h2 {
      font-size: 22px;
-     text-align: right;
-    /* color: white;
-    text-align: center;
-    font-size: 25px;
-    font-family: 'Arial Narrow'; */
-}
+     text-align: center;
+ }
 
 h3 {
     font-size: 16px;
     text-align: center;
 }
-p {
+
+p{
+    text-align: justify;
     line-height: 1.5em;
-    padding: 15% 15%;
-    /* color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    text-align: justify; */
 }
 
-section{
-    clear: both;
-}
-/* ul {
-    background-color: white;
-    text-align: center;
-} */
-
-section#about {
-    background-color: beige;
-    background-image: url(../assets/eggs.jpg);
-    min-height: 500px;
-    padding: 10% 0,
-}
-
-img#headshot {
-    float: right;
-    padding-right: 5%;
-}
-
-section#portfolio {
-    min-height: 500px;
-    padding: 10% 0;
-}
-
-article.portfolio {
-    float: left;
-    width: 20%;
-}
-
-article.portfolio img {
-    padding: 5%;
-    width: 100%;
-}
-
-section#contact {
-    min-height: 350px;
-    padding: 5% 0;
-    text-align: center;
-    background-color: lightpink;
-}
-
-ul.contact.li {
-    padding: 5% 2.5%;
-    display: inline-block;
-}
-
-.contact.li {
-        display: inline-block;
-        padding: 25px;
-}
-        
-.footer {
-    text-align: center;
-    background-color: white;
-    color: black;
-    padding: 5%;
-}
-
-.footer a {
-    color: black;
-}
-
-footer,
-.push {
-    height: 25px;
-}
-
-@media screen and (max-width: 600px) {
-    h1,
-    nav li
-    article.portfolio{
-        float:none;
-    }
-
-    header {
-        position: static
-    }
