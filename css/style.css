@@ -30,6 +30,9 @@ ul {
     border-color: black;
     border-width: 1px;
     padding-bottom: 15px;
+    font-weight: bold;
+    text-align:right;
+    text-transform: capitalize;
 }
 
 a {
@@ -82,3 +85,59 @@ p{
     line-height: 1.5em;
 }
 
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px; 
+    border: 1px solid #666666;
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px;
+    margin-bottom: 16px; 
+    resize: vertical 
+}
+
+
+input[type=submit] {
+    background-color: #000000;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #4aaaa5;
+}
+
+.icon{
+    padding:30px;
+    text-align: right;
+}
+
+.containers{
+    width: 100%;
+    padding: 10px;
+}
+/* Container holding the image and the text */
+.image-block {
+    position: relative;
+  }
+  
+  /* Bottom right text */
+  .text-block {
+    position: absolute;
+    height: 27px;
+    width: 175px;
+    top: 100px;
+    bottom: 10px;
+    background-color: black;
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 4px;
+    padding-left: 12x;
+    padding-right: 2px;
+    font-family: monospace;
+    font-size: 20px;
+    text-align: center;
+  }
