@@ -1,143 +1,112 @@
-html, body {
-    height: 100%;
-    font-family: monospace;
+/* Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+html, body{
+    background-image: url("../images/port-background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: Helvetica, sans-serif;
 }
 
+.header{
+    background:transparent;
+    padding-top: 1em;
+    display: flex;
+    margin-left: 10%;
+    /* justify-content: center; */
+}
 
-/* SIDEBAR NAV  */
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 20%;
-    background-color: #000000;
-    color: white;
-    height: 100%; /* Full height */
-    position: fixed; /* Make it stick, even on scroll */
-    overflow: auto; /* Enable scrolling if the sidenav has too much content */
-    line-height: 2em;
-    font-family: monospace;
-    font-size: 15px;
+/* DEMO-SPECIFIC STYLES */
+.typewriter h1 {
+    color: black;
+    font-family: 'Anonymous Pro', monospace; 
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid black; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .1em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black }
   }
 
-.sidebar{
-    text-align: center;
-    padding-top: 10%;
+.nav-link {
+    display: inline;
+    color: black !important;
+    font-family: Helvetica, sans-serif
 }
 
-.pageTitle{
-    border-bottom: solid;
-    border-color: black;
-    border-width: 1px;
-    padding-bottom: 15px;
-    font-weight: bold;
-    text-align:right;
-    text-transform: capitalize;
+.nav-link:hover{
+    color: silver;
 }
 
-a {
-    color: white;
-    text-decoration: none;
+li{
+    display: inline !important;
 }
 
-a:hover {
-    color: orange;
-    text-decoration: none;
+ul{
+    list-style-type: none !important;
 }
 
 hr{
-    border-color: white !important;
-    width: 80%;
-}
-  
-* {
-    box-sizing: border-box;
-  }
-main {
-    min-height: 100%;
-    margin-bottom: -100px
-}
-
-.container {
-    padding-top: 15%;
-    width: 60%;
-    margin-left: 20%;
-}
-
-
-h1 {
-    font-size: 30px;
-    text-align: center;
-}
-
- h2 {
-     font-size: 22px;
-     text-align: center;
- }
-
-h3 {
-    font-size: 16px;
-    text-align: center;
+    color:black;
 }
 
 p{
     text-align: justify;
-    line-height: 1.5em;
+    line-height: 1.6em;
 }
 
-input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px; 
-    border: 1px solid #666666;
-    border-radius: 4px; 
-    box-sizing: border-box; 
-    margin-top: 6px;
-    margin-bottom: 16px; 
-    resize: vertical 
+.container {
+    margin-left: 15%;
+    margin-top: 30px;
+    padding: 40px;
+    width: 820px;
+    height: 520px;
+    background-color: white;
+    border-radius: 5px;
+    /* background-color: rgb(216, 212, 207, 0.5); */
+    /* border-style: solid;
+    border-color:black; */
 }
 
-
-input[type=submit] {
-    background-color: #000000;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-input[type=submit]:hover {
-    background-color: #4aaaa5;
-}
-
-.icon{
-    padding:30px;
-    text-align: right;
-}
-
-.containers{
-    width: 100%;
-    padding: 10px;
-}
-/* Container holding the image and the text */
-.image-block {
-    position: relative;
-  }
-  
-  /* Bottom right text */
-  .text-block {
-    position: absolute;
-    height: 27px;
-    width: 175px;
-    top: 100px;
-    bottom: 10px;
-    background-color: black;
-    color: white;
-    padding-top: 8px;
-    padding-bottom: 4px;
-    padding-left: 12x;
-    padding-right: 2px;
-    font-family: monospace;
+.network, .fab, .far{
     font-size: 20px;
-    text-align: center;
-  }
+    color: black !important;
+}
+
+.net{
+    padding-left: 10px;
+}
+
+a.net:hover{
+    color:grey;
+}
+
+a:hover{
+    color:silver !important;
+    text-decoration: none;
+}
+
+.d-block{
+    width: 80%;
+    height: 80%;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  width: 70%;
+  margin: auto;
+}

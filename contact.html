@@ -5,60 +5,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Nina Rose Withers | Full Stack Web Developer</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    <!-- BOOTSTRAP CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
         crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <!-- FONTAWESOME CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css" type="text/css" />
+    <title>Nina Rose Withers | Full Stack Developer</title>
 </head>
 
 <body>
-    <header>
-        <ul class="sidebar">
-            <li class="animated forwards fadeInDown delay-1s">
-                <h2>NINA ROSE WITHERS</h2>
-            </li>
-            <li>
-                <h3>Full Stack Web Developer</h3>
-            </li>
-            <br>
-            <hr>
-            <br>
-            <li><a href="./index.html">About</a></li>
-            <li><a href="./portfolio.html">Portfolio</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-        </ul>
-    </header>
-
-    <div class="container">
-        <h1 class="pageTitle">CONTACT</h1>
-        <form>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="John Smith">
-
-            <label for="email">Email</label>
-            <input type="text" id="email" name="email" placeholder="example@gmail.com">
-
-            <label for="subject">Subject</label>
-            <textarea id="subject" name="subject" placeholder="" style="height:200px"></textarea>
-
-            <input type="submit" value="Submit">
-
-        </form>
-        <div class="icon">
-            <a class="one" href="https://github.com/nrgtwithers" target="blank">
-                <img src="./assets/github.png" alt="github" height="30px" width="30px"></a>
-            <a class="two" href="http://www.linkedin.com/in/nina-rose-withers-68427946" target="_blank">
-                <img src="./assets/linkedin.png" alt="github" height="30px" width="30px">
-            </a>
-            <a class="three" href="mailto:ninarosewithers@gmail.com" target="_top">
-                <img src="./assets/email.png" alt="github" height="30px" width="30px">
+    <nav class="navbar sticky-top navbar-light" style="background-color: transparent;">
+        <a class="navbar-brand" href="#">
+            <a class="nav-link" href="./index.html">ABOUT</a>
+            <a class="nav-link" href="./portfolio.html">PORTFOLIO</a>
+            <a class="nav-link" href="./contact.html">CONTACT</a>
+        </a>
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <div class="network">
+                <a class="net" href="http://www.linkedin.com/in/ninarosewithers-684"><i class="fab fa-linkedin"></i></a>
+                <a class="net" href="https://github.com/nrgtwithers"><i class="fab fa-github-square"></i></a>
+                <a class="net" href="mailto:yourname@companyname.com"><i class="far fa-envelope"></i></a>
+            </div>
+    </nav>
+    <!-- <nav class="navbar fixed-bottom navbar-light" style="background-color: transparent;">
+        <div class="navigation">
+            <a class="nav-link" href="./index.html">ABOUT</a>
+            <a class="nav-link" href="./portfolio.html">PORTFOLIO</a>
+            <a class="nav-link" href="./contact.html">CONTACT</a>
+        </div>
+    </nav> -->
+    <div class="header">
+        <div class="typewriter">
+            <h1>Nina Rose Withers | Full Stack Web Developer</h1>
         </div>
     </div>
 
-
+    <div class="container">
+        <h4>CONTACT</h4>
+        <hr>
+        <form>
+            <div class="form-group">
+                <label for="name-form">Name</label>
+                <input type="name" class="form-control" id="name-form" placeholder="">
+            </div>
+            <div class="form-group">
+                <label for="email-form">Email</label>
+                <input type="email" class="form-control" id="email-form" placeholder="">
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn btn-light">Submit</button>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="./assets/js/port.js"></script>
 </body>
 
 </html>
