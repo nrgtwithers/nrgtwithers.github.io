@@ -91,12 +91,16 @@ p{
     color: black;
 }
 
+/* .fab:hover{
+    color:silver;
+} */
+
 .net{
     padding-left: 10px;
 }
 
 a.net:hover{
-    color:grey;
+    color:silver;
 }
 
 a:hover{
@@ -122,4 +126,12 @@ h5{
 
 .Technologies{
     text-align: center;
+}
+
+h3{
+ color: white;
+}
+
+h3:hover{
+    color: silver;
 }
