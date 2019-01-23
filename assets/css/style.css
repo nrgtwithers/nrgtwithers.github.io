@@ -82,9 +82,13 @@ p{
     border-color:black; */
 }
 
-.network, .fab, .far{
-    font-size: 20px;
+.network, .fab, .far .im{
+    font-size: 25px;
     color: black !important;
+}
+
+.fa-envelope:before {
+    color: black;
 }
 
 .net{
@@ -110,4 +114,12 @@ a:hover{
   width: 50%;
   margin: auto;
   background-image: none !important;
+}
+
+h5{
+    font-weight: bold !important;
+}
+
+.Technologies{
+    text-align: center;
 }
