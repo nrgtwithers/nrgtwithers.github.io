@@ -133,5 +133,5 @@ h3{
 }
 
 h3:hover{
-    color: silver;
+    color: silver !important;
 }
