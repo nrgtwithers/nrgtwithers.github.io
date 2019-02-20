@@ -532,4 +532,11 @@ section.bl-expand .bl-icon-close {
         width: 80%;
         text-align: center;
     }
+
+    div.form-group{
+        padding: 5px;
+    }
+    .format{
+        padding:10px;
+    }
 } 
